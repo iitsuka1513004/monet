@@ -2,7 +2,6 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monet</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -11,77 +10,135 @@
     <link href="https://fonts.googleapis.com/css2?family=Martel:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <h1><img src="img/monet_sign.png" alt="Monet SIGN"></h1>
     </header>
+    <div id="navArea">
+        <nav>
+          <div class="inner">
+            <ul>
+              <li><a href="info/index.html">今、伝えたいモネのよさ</a></li>
+              <li><a href="works_caption/index.html">art work caption</a></li>
+              <li><a href="#">Text</a></li>
+            </ul>
+          </div>
+        </nav>
+      
+        <div class="toggle_btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      
+        <div id="mask"></div>
+      
+      </div>
     <main>
         <!-- <section class="fog">
         </section> -->
         <section class="about">
-            <hr id="border">
-            <p class="title01">今、伝えたいモネのよさ</p>
+            <!-- <hr id="border"> -->
+            <img class="line-01" src="img/line-border.png" alt="">
+            <h2 class="title-01">今、伝えたいモネのよさ</h2>
             <p class="info">印象派の巨匠、モネの描く作品がなぜ素晴らしいのか、 <br> どのように鑑賞すれば楽しめるか、ヒントをお伝えします。</p>
-            <a href="" class="btn">
+            <a href="info/index.html" class="btn">
                 <div class="btn-inner">
                     <p>more</p>
                 </div>
             </a>
-            <hr id="border02">
+            <img class="line-02" src="img/line-border.png" alt="">
         </section>
+        <img class="line-03" src="img/line-border.png" alt="">
         <section class="about-02">
-            <hr id="border03">
-            <div class="about-02-inline">
-                <img class="monet-sp" src="img/monet_sp.png" alt="イラスト">
-                <article class="monet-caption">
-                    <div class="title">
+            <img class="monet-sp" src="img/monet_sp.png" alt="イラスト">
+            <article class="monet-caption">
+                <div class="title-02">
                     <h2>About <br> Claude Monet</h2>
                     <img class="lace" src="img/lace.png" alt="">
                     <img class="lace" src="img/lace_2.png" alt="">
-                    </div>
-                    <p class="caption">1840年、パリで生まれる。<br>
-                    幼い頃から絵画の才能があり、<br>
-                    18歳の頃から戸街での油絵制作を始める。 <br>
-                    1874年、権威あるサロンとは別で展覧会を開催<br>
-                    し、《印象・日の出》が注目され、批判される。<br>
-                    《睡蓮》や《ウォータールー橋》連作を描き、<br>
-                    1890年頃には名声が確立された。<br>
-                    また、日本美術を愛好し、自宅庭に太鼓橋を<br>作った。<br>1926年、86歳で死去。</p>
-                </article>
-                <hr id="border04">
-            </div>
-        </section>
-            <div class="image-01">
-                <p class="circle-01"></p>
-                <img class="woman" onclick="goClick()" src="img/WomanWithAAparasol_1875NGA.jpg" alt="">
-
-            </div>
-            <div class="image-02">
-                <p class="circle-02"></p>
-                <img class="thehouse" src="img/TheHouses.png" alt="">
-            </div>
-            <div class="image-03">
-                <p class="circle-03"></p>
-                <img class="charingcross" src="img/CharingCross.png" alt="">
-            </div>
-            <div class="image-04">
-                <p class="circle-04"></p>
-                <p class="circle-05"></p>
-                <img class="water-lily" src="img/Water-Lilies.png" alt="">
-            </div>
-        <section class="art-museum">
-                <div class="title-02">
-                    <p>Art Museums</p>
-                    <img class="lace" src="img/lace.png" alt="">
-                    <img class="lace" src="img/lace_2.png" alt="">
-                    <p class="description">モネ作品を鑑賞できるおすすめ美術館を集めました</p>
                 </div>
+                <p class="caption">1840年、パリで生まれる。<br>幼い頃から絵画の才能があり、18歳の頃から戸街での油絵制作を始める。 <br>1874年、権威あるサロンとは別で展覧会を開催し、<br>《印象・日の出》が注目され、批判される。<br>《睡蓮》や《ウォータールー橋》連作を描き、1890年頃には名声が確立された。<br>また、日本美術を愛好し、自宅庭に太鼓橋を作った。<br>1926年、86歳で死去。</p>
+            </article>
+        </section>
+        <img class="line-04" src="img/line-border.png" alt="">
+
+         <div class="image-01 image">
+             <p class="circle-01"></p>
+            <a href="works_caption#woman"><figure class="parasol"><img class="woman" onclick="goClick()" src="img/WomanWithAAparasol_1875NGA.jpg" alt=""></figure></a>
+            <img class="line-05" src="img/line.png" alt="">
+        </div>
+        <img class="line-06" src="img/line-border.png" alt="">
+        <div class="image-02 image">
+            <p class="circle-02"></p>
+            <a href="works_caption/index.html#house"><figure class="parliament"> <img class="thehouse" onclick="goClick()"  src="img/TheHousesofParliament Sunset1903NGA.jpg" alt=""></figure></a>
+            <!-- <img class="line-07" src="img/line.png" alt=""> -->
+        </div>
+        <img class="line-08" src="img/line-border.png" alt="">
+        <div class="image-03 image">
+            <p class="circle-03"></p>
+            <a href="works_caption/index.html#bridge"><figure class="bridge"><img class="waterloo" onclick="goClick()"  src="img/WaterlooBridge_1901NGA.jpg" alt=""></figure></a>
+            <img class="line-09" src="img/line-border.png" alt="">
+        </div>
+        <div class="image-04 image">
+            <p class="circle-04"></p>
+            <p class="circle-05"></p>
+            <div class="lily-wrap">
+                <figure class="lily"><img class="water-lily" onclick="goClick()"  src="img/WaterLilies_1906_chicago.jpg" alt=""></figure>
+            </div>
+            <img class="line-10" src="img/line.png" alt="">
+        </div>
+        <section class="art-museum">
+            <div class="title-03">
+                <h2 >art museums </h2>
+                <img class="lace" src="img/lace.png" alt="">
+                <img class="lace" src="img/lace_2.png" alt="">
+                <p class="description">モネ作品を鑑賞できるおすすめ美術館を集めました</p>
+            </div>
+            <div class="sliderArea">
+                <div class="regular-slider regular">
+                    <article>
+                        <figure class="museum-fig"><img class="museum-img" src="img/asahi.jpeg" alt=""></figure>
+                        <h2 class="museum-name">アサヒビール大山崎山荘美術館<br>(京都)</h2>
+                        <p class="museum-info">見られる作品<br>《睡蓮》他 5作品</p>
+                    </article>
+                    <article>
+                        <figure class="museum-fig"><img class="museum-img" src="img/kokuritu.jpeg" alt=""></figure>
+                        <h2 class="museum-name">国立西洋美術館(東京)</h2>
+                        <p class="museum-info">見られる作品<br>《睡蓮》、《舟遊び》他</p>
+                    </article>
+                    <article>
+                        <figure class="museum-fig"><img class="museum-img" src="img/monet_recture_1.jpeg" alt=""></figure>
+                        <h2 class="museum-name">地中美術館(香川)</h2>
+                        <p class="museum-info">見られる作品<br>《睡蓮》他 5作品</p>
+                    </article>
+                </div>>
+            </div>
         </section>
     </main>
     <footer>
-
+        <h2 class="copy" >copyright ©︎monet</h2>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/_main.js"></script>
+    <script>
+        $('.lily-wrap').on({
+            'mouseenter':function(){
+                console.log('enter');
+                $('.lily-wrap').html('<a href="works_caption/index.html#lily"><figure class="lily"><img class="water-lily" onclick="goClick()"  src="img/WaterLilies_1906_chicago.jpg" alt=""></figure></a>');
+
+            },
+            'mouseleave':function(){
+                console.log('leave');
+                $('.lily-wrap').html('<figure class="lily"><img class="water-lily" onclick="goClick()"  src="img/WaterLilies_1906_chicago.jpg" alt=""></figure>');
+
+            }
+        });
+    </script>
 </body>
 </html>
