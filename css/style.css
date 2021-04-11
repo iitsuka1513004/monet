@@ -371,7 +371,7 @@ body{
 
 }
 .parasol{
-    width: 23%;
+    width: 50%;
     border-radius: 50%;
     position: relative;
     margin-left: 10%;
@@ -380,14 +380,14 @@ body{
     border-radius: 0;
 }  
 .parasol::after{
-    background: url(../img/CliffWalkatPourville1882_chicago.jpg); 
+    background: url(../img/summarize_modernite.png) no-repeat; 
     position: absolute;
     top: 5%;
     left: 130%;
     background-size: contain; 
     content: '';
-    width: 100%;
-    height: 100%;
+    width: 250%;
+    height: 130%;
     display: block;
     opacity: 0;
     pointer-events: none;
@@ -445,12 +445,12 @@ body{
     background: url(../img/summarize_house.png); 
     position: absolute;
     top: -20%;
-    right: 0%;
+    right: -130%;
     background-size: contain; 
     background-repeat: no-repeat;
     background-position: center top;
     content: '';
-    width: 250%;
+    width: 370%;
     height: 250%;
     display: block;
     opacity: 0;
