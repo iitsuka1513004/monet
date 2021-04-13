@@ -43,9 +43,8 @@ header{
 
 }
 
-header h1{
-    width: 80px;
-    height: 80px;
+.monet_sign{
+    width: 64%;
     position: absolute;
     top: 0;
     right: 0;
@@ -64,8 +63,8 @@ header h1{
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-
 }
+
 /*============
 nav
 =============*/
@@ -89,7 +88,7 @@ nav {
     opacity: 1;
   }
   nav .inner {
-    padding: 25px;
+    padding: 12px;
   }
   nav .inner ul {
     list-style: none;
@@ -104,8 +103,8 @@ nav {
   nav .inner ul li a {
     display: block;
     color: #929dc0;
-    font-size: 14px;
-    padding: 1em;
+    font-size: 13px;
+    padding: 2em;
     text-decoration: none;
     transition-duration: 0.2s;
     font-family: 'Noto Sans JP', sans-serif;
@@ -113,12 +112,7 @@ nav {
   nav .inner ul li a:hover {
     background: #f7f7f7;
   }
-  @media screen and (max-width: 767px) {
-    nav {
-      left: -220px;
-      width: 220px;
-    }
-  }
+
   /*============
   .toggle_btn
   =============*/
@@ -139,7 +133,7 @@ nav {
     left: 0;
     width: 30px;
     height: 2px;
-    background-color: #B2BDDD;
+    background-color: #f7f7f7;
     border-radius: 4px;
     transition: all .5s;
   }
@@ -246,13 +240,14 @@ body{
     display: flex;
     justify-content: center;
     margin: auto;
+    color: #93a0c7;
 }
 
 /* line */
 .line-01{
     margin-top: -7%;
-    margin-left: 60%;
-    width: 18%;
+    margin-left: 70%;
+    width: 27%;
     height: 20%;
 }
 .line-02{
@@ -299,12 +294,23 @@ body{
     width: 0.8%;
     margin-top: -48%;
     margin-left: 8%;
-    margin-bottom: 24%;
+    margin-bottom: 15%;
     display: block;
 }
+.line-11{
+    width: 25%;
+    margin-left: 5%;
+}
+.line-12{
+    width: 23%;
+    margin-left: 70%;
+    margin-bottom: -3%;
+}
+
 
 .about-02{
-    padding: 30px 0 0 20px;
+    /* padding: 30px 0 0 20px; */
+    padding: 10% 0 10% 0 ; 
     background-color: #B2BDDD;
     width: 70%;
     display: flex;
@@ -315,8 +321,8 @@ body{
 }
 
 .monet-sp{
-    width: 20%;
-    height: 20%;
+    width: 30%;
+    height: 30%;
     /* spサイズの時上下にしたい */
     margin: 0 auto;
 }
@@ -338,8 +344,8 @@ body{
     color: #f7f7f7;
     text-align: left;
     font-family: 'Noto Sans JP', sans-serif;
-    /* font-feature-settings: "palt"; */
-    /* letter-spacing: 0.2em; */
+    font-feature-settings: "palt";
+    letter-spacing: 0.2em;
 }
 
 .monet-caption{
@@ -397,24 +403,7 @@ body{
     opacity: 1;
     pointer-events: visible;
 }
-
-/* スクロール前は非表示にする設定
-. {
-    display:none;}
-     
-    スクロールした際に表示される画像の設定
-    . .test.fixed {
-        position: fixed;
-        right: 20%;
-        top: 0px;
-        width: 60%;
-        display: block;
-    }
- */
-.image-02{
-    /* margin: 10% 30%; */
-}
-.circle-01{
+ .circle-01{
     border-radius: 50%;
     background: #B2BDDD;
     position: absolute;
@@ -445,13 +434,13 @@ body{
     background: url(../img/summarize_house.png); 
     position: absolute;
     top: -20%;
-    right: -130%;
+    right: -150%;
     background-size: contain; 
     background-repeat: no-repeat;
     background-position: center top;
     content: '';
-    width: 370%;
-    height: 250%;
+    width: 420%;
+    height: 420%;
     display: block;
     opacity: 0;
     pointer-events: none;
@@ -494,14 +483,14 @@ body{
 .bridge::after{
     background: url(../img/summarize_waterloo.png); 
     position: absolute;
-    top: -48%;
-    right: 100%;
+    top: -20%;
+    right: -140%;
     background-size: contain; 
     background-repeat: no-repeat;
     background-position: center top;
     content: '';
-    width: 200%;
-    height: 200%;
+    width: 480%;
+    height: 480%;
     display: block;
     opacity: 0;
     pointer-events: none;
@@ -534,9 +523,10 @@ body{
     width: 20%;
     border-radius: 50%;
     position: relative;
-    margin-left: 8%;
+    margin-left: 12%;
     margin-top: 15%;
     margin-bottom: 60%;
+    cursor: pointer;
 }
 .lily:hover img{
     border-radius: 0;
@@ -544,14 +534,14 @@ body{
 .lily::after{
     background: url(../img/summarize_lily.png); 
     position: absolute;
-    top: -65%;
-    left: 40%;
+    top: -60%;
+    left: 80%;
     background-size: contain; 
     background-repeat: no-repeat;
     background-position: center top;
     content: '';
-    width: 250%;
-    height: 250%;
+    width: 380%;
+    height: 380%;
     display: block;
     opacity: 0;
     pointer-events: none;
@@ -568,7 +558,7 @@ body{
     border-radius: 50%;
     background: #B2BDDD;
     position: absolute;
-    margin: 5% 0 0 80%;
+    margin-left: 108%;
     width: 60px;
     height: 60px;
 }
@@ -580,33 +570,9 @@ body{
     width: 70px;
     height: 70px;
 }
-.art-museum{
-    background-color: #B2BDDD;
-    width: 100vw;
-    height: 130%;
-    margin-bottom: 8% ;
-    padding: 2%;
-    -webkit-font-smoothing:antialiased  
-
-}
-.title-03{
-    color:#f7f7f7;
-    text-align: center;
-    font-family: 'Martel', serif,'Noto Sans JP', sans-serif;
-    margin: 3% auto 5% auto;
-    font-size: 25px;
-    letter-spacing: 0.2em;  
-}
-.description{
-    font-size: 16px;
-    margin: auto ;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-feature-settings: "palt";
-    letter-spacing: 0.2em;
-    color:#f7f7f7;
-    -webkit-font-smoothing:antialiased;
-}
-
+/* ======
+top btn
+======= */
 .regular-slider{
     color: #f7f7f7;
     font-family:'Noto Sans JP', sans-serif;
@@ -631,12 +597,13 @@ body{
   .slick-slide img {
     width: 100%;
     height: auto;
+    object-fit: cover;
   }
   .slick-prev{
-      left: 10%;
+      left: 20%;
   }
   .slick-next{
-      right: 10%;
+      right: 20%;
   }
   .slick-prev, .slick-next {
     z-index: 1;
@@ -663,75 +630,833 @@ body{
   .thumb .slick-slide:hover {
     opacity: .7;
   }
+/* =======
+artmuseum
+======== */
+  .art-museum{
+    background-color: #B2BDDD;
+    width: 100vw;
+    height: 130%;
+    margin-bottom: 8% ;
+    padding: 2%;
+    -webkit-font-smoothing:antialiased  
+
+}
+.title-03{
+    color:#f7f7f7;
+    text-align: center;
+    font-family: 'Martel', serif,'Noto Sans JP', sans-serif;
+    margin: 3% auto 5% auto;
+    font-size: 25px;
+    letter-spacing: 0.2em;  
+}
+.description{
+    font-size: 16px;
+    margin: auto ;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-feature-settings: "palt";
+    letter-spacing: 0.2em;
+    color:#f7f7f7;
+    -webkit-font-smoothing:antialiased;
+}
 article{
     width: 30%;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+.museum-url{
+    width: 42%;
+    text-decoration: none;
+    color: #f7f7f7;
+    outline: none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    cursor:pointer;
+    /* text-align: center;
+    display: table-cell; 
+    vertical-align: middle; */
+    display: block;
+    text-align: center;
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
 }
 .museum-name{
     font-size: 16px;
-    margin: 1% 0 2% 0;
+    margin: 0 auto;
+    text-align: center;
 }
 .museum-fig{
-    width: 32%;
-    height: 50%;
-    text-align: center;
-    margin: 0 auto;
-}
-.museum-img{
+    /* width: 42%; */
     width: 100%;
     height: auto;
     margin: 0 auto;
+    text-align: center;
 }
-.meseum-info{
+.museum-img{
+    width: 100%;
+    height: 40%;
+    margin: 0 auto;
+    object-fit: cover;
+}
+.museum-info{
     font-size: 14px;
     font-family: 'Noto Sans JP', sans-serif;
     font-feature-settings: "palt";
     letter-spacing: 0.2em;
     color:#f7f7f7;
     -webkit-font-smoothing:antialiased;
-    
+    margin: 0 auto;
+    text-align: center;
 }
 
 footer{
-    margin: auto;
+    margin:10% 0 2% 0;
 }
 .copy{
-    margin:10% auto 2% auto;
+    margin:0 auto;
     color:#f7f7f7;
+    text-align: center;
     
 }
 
-/* fog */
-/* // Base */
-html {
-  box-sizing: border-box;
+#fog,#fog2{
+    background: none;
+    background-image: url('../img/もや.png'), url('../img/もや.png'), url('../img/もや.png');
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index:1;
+    -webkit-animation: snow 10s linear infinite;
+    -moz-animation: snow 10s linear infinite;
+    -ms-animation: snow 10s linear infinite;
+    animation: snow 10s linear infinite;
+    opacity: 0.7;
+    transition-property: opacity;
+    transition-duration: 2s;
+    transition-delay: 0;
+    transition-timing-function: linear;
+    position: fixed;
+  }
+  #fog.clearfog{
+    opacity: 0;
+  }
+  #fog2.clearfog{
+    opacity: 0;
+  }
+  
+  #fog2{
+    z-index:1;
+    -webkit-animation: snow2 10s linear infinite;
+    -moz-animation: snow2 10s linear infinite;
+    -ms-animation: snow2 10s linear infinite;
+    animation: snow2 9s linear infinite;
+  }
+  
+  @keyframes snow {
+    0% {background-position: 0% 0%, 0% 0%, 0% 0%;}
+    50% {background-position: 20% 20%, 30% 35%, -20% 10%;}
+    100% {background-position: 50% 80%, 60% 60%, -20% 20%;}
+  }
+  @-moz-keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+  }
+  @-webkit-keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+  }
+  @-ms-keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+  } 
+  
+  @keyframes snow2 {
+    0% {background-position: 50% 80%, 60% 60%, -20% -20%;}
+    50% {background-position: 50% -10%, 20% 25%, -10% 5%;}
+    100% {background-position: 0% 0%, 0% 0%, 0% 0%;}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* スマホ */
+@media(max-width: 767px){
+
+/* common */
+*, *::before, *::after{ box-sizing: border-box; }
+body{
+    color: #E4D4E7;
+    font-size: 13px;
+    line-height: 1.6;
+    font-family: 'Martel', serif,'Noto Sans JP', sans-serif;
 }
 
-*, 
-*:before, 
-*:after {
-  box-sizing: inherit;
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
-figure {
-  margin: 0;
+@keyframes bottom-up{
+    0%{
+        bottom: -80px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+/* header */
+header{
+    width: 100vw;
+    height: 110vh;
+    background: url(../img/background.png) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    /* animation */
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
 }
 
-/* // Absolute Background */
-.absolute-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-
-  height: 100%;
-  width: 100%;
-
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
+.monet_sign{
+    width: 64%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    /* 中央よせ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* animation */
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
-/* // Fog */
+/*============
+nav
+=============*/
+    nav {
+      left: -220px;
+      width: 220px;
+    }
+  /*============
+  .toggle_btn
+  =============*/
+  .toggle_btn {
+    display: block;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    transition: all .5s;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .toggle_btn span {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #f7f7f7;
+    border-radius: 4px;
+    transition: all .5s;
+  }
+  .toggle_btn span:nth-child(1) {
+    top: 4px;
+  }
+  .toggle_btn span:nth-child(2) {
+    top: 14px;
+  }
+  .toggle_btn span:nth-child(3) {
+    bottom: 4px;
+  }
+  .open .toggle_btn span {
+    background-color: #f7f7f7;
+  }
+  .open .toggle_btn span:nth-child(1) {
+    -webkit-transform: translateY(10px) rotate(-315deg);
+    transform: translateY(10px) rotate(-315deg);
+  }
+  .open .toggle_btn span:nth-child(2) {
+    opacity: 0;
+  }
+  .open .toggle_btn span:nth-child(3) {
+    -webkit-transform: translateY(-10px) rotate(315deg);
+    transform: translateY(-10px) rotate(315deg);
+  }
+  /*============
+  #mask
+  =============*/
+  #mask {
+    display: none;
+    transition: all .5s;
+  }
+  .open #mask {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #747d9b;
+    opacity: .8;
+    z-index: 2;
+    cursor: pointer;
+  }
+/* body */
+body{
+    background-color: #E4D4E7;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.about{
+    background-color: #B2BDDD;
+    width: 75%;
+    height: 130%;
+    margin: 20% 0 10% 25%;
+    padding: 10% 0 0 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-feature-settings: "palt";
+    letter-spacing: 0.2em;
+    -webkit-font-smoothing:antialiased  
+
+}
+.title-01{
+    display: inline-block;
+    text-align: center;
+    color: #f7f7f7;
+    font-size: 14px;
+    padding: 8% 0 0 0;
+    font-feature-settings: "palt";
+    letter-spacing: 0.2em;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.info{
+    color: #f7f7f7;
+    margin: 3% 6% ;
+    font-feature-settings: "palt";
+    letter-spacing: 0.2em;
+    font-size: 1px;
+}
+.btn{
+    width: 30%;
+    height: 4%;
+    background-color: #f7f7f7;
+    display: block;
+    margin: 1% auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    /* トランジション */
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 0;
+    transition-timing-function: ease-in-out;
+}
+.btn:hover{
+    background-color: rgba(216, 216, 216, 0.74);
+}
+.btn-inner{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    color: #93a0c7;
+}
+
+.about-02{
+    background-color: #B2BDDD;
+    width: 80%;
+    justify-content: space-between;
+    -webkit-font-smoothing:antialiased;
+    flex-direction: column;
+}
+.title-02{
+  text-align: center;
+  color: #f7f7f7;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  
+}
+
+.monet-sp{
+    width: 30%;
+    height: 30%;
+    /* spサイズの時上下にしたい */
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+.lace{
+    width: 20%;
+    height: 40%;
+    top: 5%;
+}
+.caption{
+    padding: 2% 0 3% 0;
+    color: #f7f7f7;
+    text-align: left;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-feature-settings: "palt";
+    letter-spacing: 0.2em;
+    font-size: 11px;
+}
+
+.monet-caption{
+    display: block;
+    margin-bottom: 2%;
+    font-feature-settings: "palt";
+    letter-spacing: 0.1em;
+    width: 50%;
+
+}
+.image{
+    width: 80%;
+    height: 40%;
+}
+/* woman */
+.image-01{
+    margin: 10% 0;
+    display: flex;
+}
+.woman{
+    border-radius: 50%;
+    width: 100%;
+
+}
+.parasol{
+    border-radius: 50%;
+    position: relative;
+    margin-left: 10%;
+    background: url(../img/summarize_modernite.png) no-repeat; 
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 20%;
+    height: 10%;
+    display: block;
+}
+.circle-01{
+    border-radius: 50%;
+    background: #B2BDDD;
+    position: absolute;
+    margin: 30% 70%;
+    width: 15%;
+    height: 160%;
+}
+/* thehouse */
+.thehouse{
+    width: 100%;
+    border-radius: 50%;
+    transition-property: all;
+    transition-duration: 0.8s;
+    transition-delay: 0;
+    transition-timing-function: ease-in-out;
+    cursor: pointer; 
+}
+.parliament{
+    width: 20%;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 40%;
+}
+.parliament:hover img{
+    border-radius: 0;
+}
+.parliament::after{
+    background: url(../img/summarize_house.png); 
+    position: absolute;
+    top: -20%;
+    right: -150%;
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center top;
+    content: '';
+    width: 420%;
+    height: 420%;
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+    transition: 1.3s ease-in-out;
+}
+.parliament:hover::after{
+    opacity: 1;
+    pointer-events: visible;
+}
+
+.circle-02{
+    border-radius: 50%;
+    background: #B2BDDD;
+    position: absolute;
+    margin-top: 50%;
+    margin-left: 0%;
+    width: 20%;
+    height: 90%;
+}
+/* charingcross */
+.waterloo{
+    width: 100%;
+    border-radius: 50%;
+    transition-property: all;
+    transition-duration: 0.8s;
+    transition-delay: 0;
+    transition-timing-function: ease-in-out;
+    /* margin: 3% 0 0 100%; */
+    cursor: pointer; 
+}
+.bridge{
+    width: 20%;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 60%;
+}
+.bridge:hover img{
+    border-radius: 0;
+}
+.bridge::after{
+    background: url(../img/summarize_waterloo.png); 
+    position: absolute;
+    top: -20%;
+    right: -140%;
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center top;
+    content: '';
+    width: 480%;
+    height: 480%;
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+    transition: 1.3s ease-in-out;
+}
+.bridge:hover::after{
+    opacity: 1;
+    pointer-events: visible;
+}
+.circle-03{
+    border-radius: 50%;
+    background: #B2BDDD;
+    position: absolute;
+    margin: 20% 50%;
+    width: 50px;
+    height: 50px;
+}
+
+/* water-lily */
+.water-lily{
+    width: 100%;
+    border-radius: 50%;
+    transition-property: all;
+    transition-duration: 0.8s;
+    transition-delay: 0;
+    transition-timing-function: ease-in-out;
+    cursor: pointer; 
+}
+.lily{
+    width: 20%;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 12%;
+    margin-top: 15%;
+    margin-bottom: 60%;
+    cursor: pointer;
+}
+.lily:hover img{
+    border-radius: 0;
+}  
+.lily::after{
+    background: url(../img/summarize_lily.png); 
+    position: absolute;
+    top: -60%;
+    left: 80%;
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center top;
+    content: '';
+    width: 380%;
+    height: 380%;
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+    transition: 1.3s ease-in-out;
+}
+.lily:hover::after{
+    opacity: 1;
+    pointer-events: visible;
+    display: block;
+}
+
+
+.circle-04{
+    border-radius: 50%;
+    background: #B2BDDD;
+    position: absolute;
+    margin-left: 108%;
+    width: 15%;
+    height: 30%;
+}
+.circle-05{
+    border-radius: 50%;
+    background: #B2BDDD;
+    position: absolute;
+    margin: 35% 0% 0 20%;
+    width: 70px;
+    height: 70px;
+}
+/* ======
+top btn
+======= */
+.regular-slider{
+    color: #f7f7f7;
+    font-family:'Noto Sans JP', sans-serif;
+    /* width: 100vw;
+    height: 180%; */
+    margin: auto;
+}
+.regular-slider article{
+    text-align: center;
+}
+.sliderArea {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 25px;
+  }
+  .sliderArea.w300 {
+    max-width: 300px;
+  }
+  .slick-slide {
+    margin: 0 5px;
+  }
+  .slick-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .slick-prev{
+      left: 20%;
+  }
+  .slick-next{
+      right: 20%;
+  }
+  .slick-prev, .slick-next {
+    z-index: 1;
+  }
+  .slick-prev:before, .slick-next:before {
+    color: #000;
+  }
+  .slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+  }
+  .slick-active {
+    opacity: 1;
+  }
+  .slick-current {
+    opacity: 1;
+  }
+  .thumb {
+    margin: 20px 0 0;
+  }
+  .thumb .slick-slide {
+    cursor: pointer;
+  }
+  .thumb .slick-slide:hover {
+    opacity: .7;
+  }
+/* =======
+artmuseum
+======== */
+  .art-museum{
+    background-color: #B2BDDD;
+    width: 100vw;
+    height: 130%;
+    margin-bottom: 8% ;
+    padding: 2%;
+    -webkit-font-smoothing:antialiased  
+
+}
+.title-03{
+    color:#f7f7f7;
+    text-align: center;
+    font-family: 'Martel', serif,'Noto Sans JP', sans-serif;
+    margin: 3% auto 5% auto;
+    font-size: 25px;
+    letter-spacing: 0.2em;  
+}
+.description{
+    font-size: 16px;
+    margin: auto ;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-feature-settings: "palt";
+    letter-spacing: 0.2em;
+    color:#f7f7f7;
+    -webkit-font-smoothing:antialiased;
+}
+article{
+    width: 30%;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+.museum-url{
+    width: 42%;
+    text-decoration: none;
+    color: #f7f7f7;
+    outline: none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    cursor:pointer;
+    /* text-align: center;
+    display: table-cell; 
+    vertical-align: middle; */
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.museum-name{
+    font-size: 16px;
+    margin: 0 auto;
+    text-align: center;
+}
+.museum-fig{
+    /* width: 42%; */
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+.museum-img{
+    width: 100%;
+    height: 40%;
+    margin: 0 auto;
+    object-fit: cover;
+}
+.museum-info{
+    font-size: 14px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-feature-settings: "palt";
+    letter-spacing: 0.2em;
+    color:#f7f7f7;
+    -webkit-font-smoothing:antialiased;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer{
+    margin:10% 0 2% 0;
+}
+.copy{
+    margin:0 auto;
+    color:#f7f7f7;
+    text-align: center;
+}
+
+
+#fog,#fog2{
+    background: none;
+    background-image: url('../img/もや.png'), url('../img/もや.png'), url('../img/もや.png');
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index:1;
+    -webkit-animation: snow 10s linear infinite;
+    -moz-animation: snow 10s linear infinite;
+    -ms-animation: snow 10s linear infinite;
+    animation: snow 10s linear infinite;
+    opacity: 0.7;
+    transition-property: opacity;
+    transition-duration: 2s;
+    transition-delay: 0;
+    transition-timing-function: linear;
+    position: fixed;
+  }
+  #fog.clearfog{
+    opacity: 0;
+  }
+  #fog2.clearfog{
+    opacity: 0;
+  }
+  
+  #fog2{
+    z-index:1;
+    -webkit-animation: snow2 10s linear infinite;
+    -moz-animation: snow2 10s linear infinite;
+    -ms-animation: snow2 10s linear infinite;
+    animation: snow2 9s linear infinite;
+  }
+  
+  @keyframes snow {
+    0% {background-position: 0% 0%, 0% 0%, 0% 0%;}
+    50% {background-position: 20% 20%, 30% 35%, -20% 10%;}
+    100% {background-position: 50% 80%, 60% 60%, -20% 20%;}
+  }
+  @-moz-keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+  }
+  @-webkit-keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+  }
+  @-ms-keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+  } 
+  
+  @keyframes snow2 {
+    0% {background-position: 50% 80%, 60% 60%, -20% -20%;}
+    50% {background-position: 50% -10%, 20% 25%, -10% 5%;}
+    100% {background-position: 0% 0%, 0% 0%, 0% 0%;}
+  }
+}

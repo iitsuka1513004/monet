@@ -15,38 +15,39 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- <div id="fog">
+    </div>
+    <div id="fog2">
+    </div> -->
+
     <header>
-        <h1><img src="img/monet_sign.png" alt="Monet SIGN"></h1>
+        <h1><img class="monet_sign" src="img/monet_sign.png" alt="Monet SIGN"></h1>
     </header>
     <div id="navArea">
         <nav>
           <div class="inner">
             <ul>
-              <li><a href="info/index.html">今、伝えたいモネのよさ</a></li>
-              <li><a href="works_caption/index.html">art work caption</a></li>
-              <li><a href="#">Text</a></li>
+                <li><a href="index.html">HOME</a></li>
+              <li><a href="info.html">今、伝えたいモネのよさ</a></li>
+              <li><a href="artworks_caption.html">art work caption</a></li>
             </ul>
           </div>
         </nav>
-      
         <div class="toggle_btn">
           <span></span>
           <span></span>
           <span></span>
         </div>
-      
         <div id="mask"></div>
-      
       </div>
     <main>
         <!-- <section class="fog">
         </section> -->
         <section class="about">
-            <!-- <hr id="border"> -->
             <img class="line-01" src="img/line-border.png" alt="">
             <h2 class="title-01">今、伝えたいモネのよさ</h2>
             <p class="info">印象派の巨匠、モネの描く作品がなぜ素晴らしいのか、 <br> どのように鑑賞すれば楽しめるか、ヒントをお伝えします。</p>
-            <a href="info/index.html" class="btn">
+            <a href="info.html" class="btn">
                 <div class="btn-inner">
                     <p>more</p>
                 </div>
@@ -69,29 +70,28 @@
 
          <div class="image-01 image">
              <p class="circle-01"></p>
-            <a href="artworks_caption#woman"><figure class="parasol"><img class="woman" onclick="goClick()" src="img/WomanWithAAparasol_1875NGA.jpg" alt=""></figure></a>
+             <figure class="parasol" onclick="location.href='artworks_caption.html#woman'"><img class="woman" src="img/Woman_square.jpg" alt=""></figure>
             <img class="line-05" src="img/line.png" alt="">
         </div>
         <img class="line-06" src="img/line-border.png" alt="">
         <div class="image-02 image">
             <p class="circle-02"></p>
-            <a href="artworks_caption/index.html#house"><figure class="parliament"> <img class="thehouse" onclick="goClick()"  src="img/TheHousesofParliament Sunset1903NGA.jpg" alt=""></figure></a>
+            <figure class="parliament" onclick="location.href='artworks_caption.html#house'"><img class="thehouse" src="img/TheHouses_square.jpg" alt=""></figure>
             <!-- <img class="line-07" src="img/line.png" alt=""> -->
         </div>
         <img class="line-08" src="img/line-border.png" alt="">
         <div class="image-03 image">
             <p class="circle-03"></p>
-            <a href="artworks_caption/index.html#bridge"><figure class="bridge"><img class="waterloo" onclick="goClick()"  src="img/WaterlooBridge_1901NGA.jpg" alt=""></figure></a>
+            <figure class="bridge" onclick="location. href='artworks_caption.html#bridge'"><img class="waterloo" src="img/Waterloo_square.jpg" alt=""></figure>
             <img class="line-09" src="img/line-border.png" alt="">
         </div>
         <div class="image-04 image">
             <p class="circle-04"></p>
             <p class="circle-05"></p>
-            <div class="lily-wrap">
-                <figure class="lily"><img class="water-lily" onclick="goClick()"  src="img/WaterLilies_1906_chicago.jpg" alt=""></figure>
-            </div>
+            <figure class="lily" onclick="location.href='artworks_caption.html#lily'"><img class="water-lily" src="img/WaterLilies_1906_chicago.jpg" alt=""></figure>
             <img class="line-10" src="img/line.png" alt="">
         </div>
+        <img class="line-11" src="img/line-border.png" alt="">
         <section class="art-museum">
             <div class="title-03">
                 <h2 >art museums </h2>
@@ -102,22 +102,30 @@
             <div class="sliderArea">
                 <div class="regular-slider regular">
                     <article>
-                        <figure class="museum-fig"><img class="museum-img" src="img/asahi.jpeg" alt=""></figure>
-                        <h2 class="museum-name">アサヒビール大山崎山荘美術館<br>(京都)</h2>
-                        <p class="museum-info">見られる作品<br>《睡蓮》他 5作品</p>
+                        <a class="museum-url" href="https://www.asahibeer-oyamazaki.com/">
+                            <figure class="museum-fig"><img class="museum-img" src="img/asahi.jpeg" alt=""></figure>
+                            <h2 class="museum-name">アサヒビール大山崎山荘美術館<br>(京都)</h2>
+                            <p class="museum-info">見られる作品<br>《睡蓮》他 5作品</p>
+                        </a>
                     </article>
                     <article>
-                        <figure class="museum-fig"><img class="museum-img" src="img/kokuritu.jpeg" alt=""></figure>
-                        <h2 class="museum-name">国立西洋美術館(東京)</h2>
-                        <p class="museum-info">見られる作品<br>《睡蓮》、《舟遊び》他</p>
+                        <a class="museum-url" href="https://www.nmwa.go.jp/jp.html">
+                            <figure class="museum-fig"><img class="museum-img" src="img/kokuritu.jpeg" alt=""></figure>
+                            <h2 class="museum-name">国立西洋美術館(東京)</h2>
+                            <p class="museum-info">見られる作品<br>《睡蓮》、《舟遊び》他</p>
+                        </a>
                     </article>
                     <article>
-                        <figure class="museum-fig"><img class="museum-img" src="img/monet_recture_1.jpeg" alt=""></figure>
-                        <h2 class="museum-name">地中美術館(香川)</h2>
-                        <p class="museum-info">見られる作品<br>《睡蓮》他 5作品</p>
+                        <a class="museum-url" href="https://benesse-artsite.jp/art/chichu.html">
+                            <figure class="museum-fig"><img class="museum-img" src="img/monet_recture_1.jpeg" alt=""></figure>
+                            <h2 class="museum-name">地中美術館(香川)</h2>
+                            <p class="museum-info">見られる作品<br>《睡蓮》他 5作品</p>
+                        </a>
                     </article>
-                </div>>
+                </div>
             </div>
+            <img class="line-12" src="img/line-border.png" alt="">
+
         </section>
     </main>
     <footer>
@@ -126,19 +134,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/_main.js"></script>
-    <script>
-        $('.lily-wrap').on({
-            'mouseenter':function(){
-                console.log('enter');
-                $('.lily-wrap').html('<a href="artworks_caption/index.html#lily"><figure class="lily"><img class="water-lily" onclick="goClick()"  src="img/WaterLilies_1906_chicago.jpg" alt=""></figure></a>');
-
-            },
-            'mouseleave':function(){
-                console.log('leave');
-                $('.lily-wrap').html('<figure class="lily"><img class="water-lily" onclick="goClick()"  src="img/WaterLilies_1906_chicago.jpg" alt=""></figure>');
-
-            }
-        });
-    </script>
 </body>
 </html>

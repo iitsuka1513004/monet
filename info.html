@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monet</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/info.css">
+</head>
+<body>
+    <div id="fog">
+    </div>
+    <div id="fog2">
+    </div>
+   <header>
+        <a class="sign_fortop" href="index.html">
+          <img class="monet_sign" src="img/monet_sign.png" alt="Monet SIGN">
+        </a>
+    </header>
+    <div id="navArea">
+        <nav>
+          <div class="inner">
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="info/index.html">今、伝えたいモネのよさ</a></li>
+              <li><a href="works_caption/index.html">art work caption</a></li>
+            </ul>
+          </div>
+        </nav>
+      
+        <div class="toggle_btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      
+        <div id="mask"></div>
+      
+      </div>
+
+    <main>
+        <p class="pagetop"><a href="#wrap">▲</a></p>
+        <h2 class="title">今、伝えたいモネのよさ</h2>
+        <p>ここでは鑑賞するときのポイントをお伝えします<br>実際に美術館でモネ作品を見つけたら、ぜひ思い出してみてください</p>
+        <!-- <img class="lace" src="img/lace.png" alt="">
+        <img class="lace" src="img/lace_2.png" alt=""> -->
+        <section>
+            <img class="work-01" src="img/waterlily_1914-26_oran.jpeg" alt="">
+            <h2 class="work-title">《睡蓮、朝》<br> オランジェリー美術館</h2>
+           
+            <p class="intro">これはモネの晩年に描かれた睡蓮が主題のの絵画作品です。<br>睡蓮のモチーフはモネの生涯でたくさん描かれてきました<br>が(その数約250作品とも)、どこを見れば作品を楽しめるでしょうか</p>
+            <div class="point01 sa-up">
+                <img class="orangerie" src="img/orangerie.png" alt="">
+                <p class="point-01">point 1 <br>サイズ感<br> <br> この作品は200×1,275 cmととても大きいです。<br>近くで見るともやもやとしていて色が並んでいるだけの<br>ように見えます。そこで後ろへ数歩下がってみてください。 <br>急に鮮明に絵画が現れ、鑑賞できると思います。</p>
+            </div>
+            <div class="point02 sa-up">
+                <img class="part-lily" src="img/waterlilies_1919_MET_2.jpg" alt="">
+                <p class="point-02">point 2<br>筆づかい<br><br>こちらは別作品の《睡蓮》の一部分です。<br>モネの作品にはふんだんに絵具が使われ、<br>キャンバスに凹凸があります。この筆触は実際に見ないと<br>分からないため、ぜひ直接見てほしいポイントです。</p>
+            </div>
+            <div class="point03 sa-up">
+                <p>point 3<br>描かれる空気<br><br></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2 class="copy" >copyright ©︎monet</h2>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/info.js"></script>
+    <script>
+        $(document).ready(function() {
+          var pagetop = $('.pagetop');
+            $(window).scroll(function () {
+               if ($(this).scrollTop() > 100) {
+                    pagetop.fadeIn();
+               } else {
+                    pagetop.fadeOut();
+                    }
+               });
+               pagetop.click(function () {
+                   $('body, html').animate({ scrollTop: 0 }, 500);
+                      return false;
+           });
+        });
+        </script>
+</body>
+</html>
