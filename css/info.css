@@ -286,6 +286,20 @@ topへボタン
     opacity: 0.5;
 }
 
+/* scrollでフェードイン */
+.sa {
+  opacity: 0;
+  transition: all .5s ease;
+  }
+  .sa.show {
+  opacity: 1;
+  transform: none;
+  }
+  .sa--up {
+  transform: translate(0, 100px);
+  }
+
+
 footer{
     margin: auto;
     height: 20%;

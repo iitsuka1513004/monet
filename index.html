@@ -43,7 +43,7 @@
     <main>
         <!-- <section class="fog">
         </section> -->
-        <section class="about">
+        <section id="test" class="about sa sa--rl" >
             <img class="line-01" src="img/line-border.png" alt="">
             <h2 class="title-01">今、伝えたいモネのよさ</h2>
             <p class="info">印象派の巨匠、モネの描く作品がなぜ素晴らしいのか、 <br> どのように鑑賞すれば楽しめるか、ヒントをお伝えします。</p>
@@ -55,7 +55,7 @@
             <img class="line-02" src="img/line-border.png" alt="">
         </section>
         <img class="line-03" src="img/line-border.png" alt="">
-        <section class="about-02">
+        <section class="about-02 sa sa--lr">
             <img class="monet-sp" src="img/monet_sp.png" alt="イラスト">
             <article class="monet-caption">
                 <div class="title-02">
@@ -66,32 +66,32 @@
                 <p class="caption">1840年、パリで生まれる。<br>幼い頃から絵画の才能があり、18歳の頃から戸街での油絵制作を始める。 <br>1874年、権威あるサロンとは別で展覧会を開催し、<br>《印象・日の出》が注目され、批判される。<br>《睡蓮》や《ウォータールー橋》連作を描き、1890年頃には名声が確立された。<br>また、日本美術を愛好し、自宅庭に太鼓橋を作った。<br>1926年、86歳で死去。</p>
             </article>
         </section>
-        <img class="line-04" src="img/line-border.png" alt="">
+        <img class="line-04 sa sa--rl" src="img/line-border.png" alt="">
 
          <div class="image-01 image">
              <p class="circle-01"></p>
              <figure class="parasol" onclick="location.href='artworks_caption.html#woman'"><img class="woman" src="img/Woman_square.jpg" alt=""></figure>
-            <img class="line-05" src="img/line.png" alt="">
+            <img class="line-05 sa sa--down" src="img/line.png" alt="">
         </div>
-        <img class="line-06" src="img/line-border.png" alt="">
+        <img class="line-06 sa sa--lr" src="img/line-border.png" alt="">
         <div class="image-02 image">
             <p class="circle-02"></p>
             <figure class="parliament" onclick="location.href='artworks_caption.html#house'"><img class="thehouse" src="img/TheHouses_square.jpg" alt=""></figure>
             <!-- <img class="line-07" src="img/line.png" alt=""> -->
         </div>
-        <img class="line-08" src="img/line-border.png" alt="">
+        <img class="line-08 sa sa--rl" src="img/line-border.png" alt="">
         <div class="image-03 image">
             <p class="circle-03"></p>
             <figure class="bridge" onclick="location. href='artworks_caption.html#bridge'"><img class="waterloo" src="img/Waterloo_square.jpg" alt=""></figure>
-            <img class="line-09" src="img/line-border.png" alt="">
+            <img class="line-09 sa sa--lr" src="img/line-border.png" alt="">
         </div>
         <div class="image-04 image">
             <p class="circle-04"></p>
             <p class="circle-05"></p>
             <figure class="lily" onclick="location.href='artworks_caption.html#lily'"><img class="water-lily" src="img/WaterLilies_1906_chicago.jpg" alt=""></figure>
-            <img class="line-10" src="img/line.png" alt="">
+            <img class="line-10 sa sa--down" src="img/line.png" alt="">
         </div>
-        <img class="line-11" src="img/line-border.png" alt="">
+        <img class="line-11 sa sa--lr" src="img/line-border.png" alt="">
         <section class="art-museum">
             <div class="title-03">
                 <h2 >art museums </h2>
@@ -117,14 +117,14 @@
                     </article>
                     <article>
                         <a class="museum-url" href="https://benesse-artsite.jp/art/chichu.html">
-                            <figure class="museum-fig"><img class="museum-img" src="img/monet_recture_1.jpeg" alt=""></figure>
-                            <h2 class="museum-name">地中美術館(香川)</h2>
+                            <figure class="museum-fig"><img class="museum-img" src="img/NC-001.jpg" alt=""></figure>
+                            <h2 class="museum-name">地中美術館(香川)<br>写真：藤塚光政</h2>
                             <p class="museum-info">見られる作品<br>《睡蓮》他 5作品</p>
                         </a>
                     </article>
                 </div>
             </div>
-            <img class="line-12" src="img/line-border.png" alt="">
+            <img class="line-12 sa sa--rl" src="img/line-border.png" alt="">
 
         </section>
     </main>
@@ -134,5 +134,40 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/_main.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <script>
+        var scrollAnimationClass = 'sa';
+        var scrollAnimationShowClass = 'show';
+        var triggerMarginDefault = 300;
+        
+        var scrollAnimationElm = document.querySelectorAll('.' + scrollAnimationClass);
+        var scrollAnimationFunc = function() {
+        var dataMargin = scrollAnimationClass + '_margin';
+        var dataTrigger = scrollAnimationClass + '_trigger';
+        var dataDelay = scrollAnimationClass + '_delay';
+        for(var i = 0; i < scrollAnimationElm.length; i++) {
+        var triggerMargin = triggerMarginDefault;
+        var elm = scrollAnimationElm[i];
+        var showPos = 0;
+        if(elm.dataset[dataMargin] != null) {
+        triggerMargin = parseInt(elm.dataset[dataMargin]);
+        }
+        if(elm.dataset[dataTrigger]) {
+        showPos = document.querySelector(elm.dataset[dataTrigger]).getBoundingClientRect().top + triggerMargin;
+        } else {
+        showPos = elm.getBoundingClientRect().top + triggerMargin;
+        }
+        if (window.innerHeight > showPos) {
+        var delay = (elm.dataset[dataDelay])? elm.dataset[dataDelay] : 0;
+        setTimeout(function(index) {
+        scrollAnimationElm[index].classList.add('show');
+        }.bind(null, i), delay);
+        }
+        }
+        }
+        window.addEventListener('load', scrollAnimationFunc);
+        window.addEventListener('scroll', scrollAnimationFunc);
+        </script>
 </body>
 </html>

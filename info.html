@@ -54,15 +54,15 @@
             <h2 class="work-title">《睡蓮、朝》<br> オランジェリー美術館</h2>
            
             <p class="intro">これはモネの晩年に描かれた睡蓮が主題のの絵画作品です。<br>睡蓮のモチーフはモネの生涯でたくさん描かれてきました<br>が(その数約250作品とも)、どこを見れば作品を楽しめるでしょうか</p>
-            <div class="point01 sa-up">
+            <div class="point01 sa sa--up">
                 <img class="orangerie" src="img/orangerie.png" alt="">
                 <p class="point-01">point 1 <br>サイズ感<br> <br> この作品は200×1,275 cmととても大きいです。<br>近くで見るともやもやとしていて色が並んでいるだけの<br>ように見えます。そこで後ろへ数歩下がってみてください。 <br>急に鮮明に絵画が現れ、鑑賞できると思います。</p>
             </div>
-            <div class="point02 sa-up">
+            <div class="point02 sa sa--up">
                 <img class="part-lily" src="img/waterlilies_1919_MET_2.jpg" alt="">
                 <p class="point-02">point 2<br>筆づかい<br><br>こちらは別作品の《睡蓮》の一部分です。<br>モネの作品にはふんだんに絵具が使われ、<br>キャンバスに凹凸があります。この筆触は実際に見ないと<br>分からないため、ぜひ直接見てほしいポイントです。</p>
             </div>
-            <div class="point03 sa-up">
+            <div class="point03 sa sa--up">
                 <p>point 3<br>描かれる空気<br><br></p>
             </div>
         </section>
@@ -89,5 +89,41 @@
            });
         });
         </script>
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+            <script>
+                var scrollAnimationClass = 'sa';
+                var scrollAnimationShowClass = 'show';
+                var triggerMarginDefault = 300;
+                
+                var scrollAnimationElm = document.querySelectorAll('.' + scrollAnimationClass);
+                var scrollAnimationFunc = function() {
+                var dataMargin = scrollAnimationClass + '_margin';
+                var dataTrigger = scrollAnimationClass + '_trigger';
+                var dataDelay = scrollAnimationClass + '_delay';
+                for(var i = 0; i < scrollAnimationElm.length; i++) {
+                var triggerMargin = triggerMarginDefault;
+                var elm = scrollAnimationElm[i];
+                var showPos = 0;
+                if(elm.dataset[dataMargin] != null) {
+                triggerMargin = parseInt(elm.dataset[dataMargin]);
+                }
+                if(elm.dataset[dataTrigger]) {
+                showPos = document.querySelector(elm.dataset[dataTrigger]).getBoundingClientRect().top + triggerMargin;
+                } else {
+                showPos = elm.getBoundingClientRect().top + triggerMargin;
+                }
+                if (window.innerHeight > showPos) {
+                var delay = (elm.dataset[dataDelay])? elm.dataset[dataDelay] : 0;
+                setTimeout(function(index) {
+                scrollAnimationElm[index].classList.add('show');
+                }.bind(null, i), delay);
+                }
+                }
+                }
+                window.addEventListener('load', scrollAnimationFunc);
+                window.addEventListener('scroll', scrollAnimationFunc);
+                </script>
+        
 </body>
 </html>
