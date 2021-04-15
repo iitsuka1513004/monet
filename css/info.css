@@ -159,6 +159,10 @@ nav {
     cursor: pointer;
   }
 
+
+
+
+
 /* body */
 body{
     background-color: #E4D4E7;
@@ -217,47 +221,40 @@ p{
 
 .point01{
     background-color: #f7f7f779;
-    width: 80%;
+    width: 60%;
     display: block;
     text-align: center;
     margin: 3% auto;
     padding: 3%;
-    /* animation */
-    /* opacity: 0;
-    animation-name: fade;
-    animation-duration: 3s;
-    animation-delay: 0;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards; */
+    font-size: 14px;
 }
 .orangerie{
-    width: 45%;
+    width: 85%;
     height: 20%;
 }
 
 .point02{
     background-color: #f7f7f779;
-    width: 80%;
+    width: 60%;
     display: block;
     text-align: center;
     margin: 3% auto;
     padding: 3%;
 }
 .part-lily{
-    width: 45%;
+    width: 85%;
 }
 
 .point03{
     background-color: #f7f7f779;
-    width: 80%;
+    width: 60%;
     display: block;
     text-align: center;
     margin: 3% auto;
     padding: 3%;
 }
 .Lagre{
-  width: 45%;
+  width: 85%;
 }
 /* =========
 topへボタン
@@ -377,6 +374,45 @@ footer{
   0% {background-position: 50% 80%, 60% 60%, -20% -20%;}
   50% {background-position: 50% -10%, 20% 25%, -10% 5%;}
   100% {background-position: 0% 0%, 0% 0%, 0% 0%;}
-  /* 100% {background-position: -100px -100px, -150px -150px, -300px -300px;} */
+
+}
+
+
+
+
+
+
+
+
+
+/* スマホ */
+@media(max-width: 767px){
+
+
+  .title{
+    color:#6a789e;
+    font-size: 14px;
+    margin: 8% auto 3% auto;
+    font-feature-settings: "palt";
+    letter-spacing: 0.2em;
+}
+.info{
+  width: 70%;
+  font-size: 11px;
+  margin: 0 auto;
+
+}
+.point{
+  font-size: 11px;
+  margin: 0 auto;
+  width: 80%;
+}
+.point01,.point02,.point03{
+  width: 90%;
+}
+
+.orangerie,.part-lily,.Lagre{
+  width: 72%;
+}
 
 }

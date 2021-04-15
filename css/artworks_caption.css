@@ -313,6 +313,12 @@ footer{
 
 
 
+
+
+
+
+
+
   /* スマホ */
 @media(max-width: 767px){
   .work-title{
@@ -324,8 +330,8 @@ footer{
     font-size: 11px;
     color:#6a789e;
     font-family: 'Noto Sans JP', sans-serif;
-    margin:0 0 20px 0;
-
+    margin: 4% auto;
+    width: 90%;
 }
 .imgs{
   width: 100%;
