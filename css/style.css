@@ -242,7 +242,7 @@ body{
     margin: 10px 0 10px 0 ;
     font-feature-settings: "palt";
     letter-spacing: 0.2em;
-    font-size: 14px;
+    font-size: 10%;
 }
 .btn{
     width: 150px;
@@ -1015,7 +1015,8 @@ body{
     margin: 3% 6% ;
     font-feature-settings: "palt";
     letter-spacing: 0.2em;
-    font-size: 1px;
+    font-size: 8%;
+    text-align: center;
 }
 .btn{
     width: 30%;
