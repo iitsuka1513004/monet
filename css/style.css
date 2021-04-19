@@ -839,7 +839,7 @@ footer{
 /* common */
 *, *::before, *::after{ box-sizing: border-box; }
 header{
-  height: 60vh;
+  height: 20vh;
 }
 
 

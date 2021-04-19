@@ -390,7 +390,7 @@ footer{
 @media(max-width: 767px){
 
   header{
-    height: 60vh;
+    height: 20vh;
   }
 
   .title{

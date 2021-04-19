@@ -323,7 +323,7 @@ footer{
 @media(max-width: 767px){
 
   header{
-    height: 60vh;
+    height: 20vh;
   }
   .work-title{
     font-size: 14px;
