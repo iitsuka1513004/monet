@@ -389,6 +389,9 @@ footer{
 /* スマホ */
 @media(max-width: 767px){
 
+  header{
+    height: 60vh;
+  }
 
   .title{
     color:#6a789e;
