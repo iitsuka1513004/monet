@@ -177,6 +177,7 @@ body{
     margin: 8% auto 3% auto;
     font-feature-settings: "palt";
     letter-spacing: 0.2em;
+    font-family:'Noto Sans JP', sans-serif;
 
 }
 /* .lace{
