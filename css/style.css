@@ -838,6 +838,11 @@ footer{
 
 /* common */
 *, *::before, *::after{ box-sizing: border-box; }
+header{
+  height: 60vh;
+}
+
+
 body{
     color: #E4D4E7;
     font-size: 13px;

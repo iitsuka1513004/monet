@@ -321,6 +321,10 @@ footer{
 
   /* スマホ */
 @media(max-width: 767px){
+
+  header{
+    height: 60vh;
+  }
   .work-title{
     font-size: 14px;
     color:#6a789e;
