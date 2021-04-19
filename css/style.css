@@ -867,7 +867,7 @@ body{
 /* header */
 header{
     width: 100vw;
-    height: 20vh;
+    height: 100vh;
     background: url(../img/background.png) no-repeat center center;
     background-size: cover;
     position: relative;
